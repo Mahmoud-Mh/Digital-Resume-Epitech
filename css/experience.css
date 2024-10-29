@@ -1,0 +1,199 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 80px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Introduction Section */
+.experience-intro {
+    background: linear-gradient(135deg, #4a00e0 0%, #8e2de2 100%);
+    color: #fff;
+}
+
+.experience-intro h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.experience-intro p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Timeline Section */
+.timeline-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 80px; /* Increase left padding for icon */
+    border-left: 3px solid #8e2de2;
+}
+
+.timeline-item {
+    margin-bottom: 50px;
+    position: relative;
+    display: flex;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.timeline-item:hover .timeline-content {
+    background-color: #ececec;
+    transform: scale(1.02);
+}
+
+/* Color-coded roles */
+.timeline-item.fullstack .timeline-icon {
+    background-color: #4a00e0; /* Full Stack Developer roles */
+}
+
+.timeline-item.data-analyst .timeline-icon {
+    background-color: #8e2de2; /* Data Analyst roles */
+}
+
+/* Timeline Icon */
+.timeline-item .timeline-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #4a00e0;
+    border-radius: 50%;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    z-index: 1;
+}
+
+/* Timeline Content */
+.timeline-item .timeline-content {
+    margin-left: 70px; /* Ensure content does not overlap with icons */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 100%; /* Set the width of the content */
+    max-width: 800px; /* Optional max-width to ensure content width remains the same */
+}
+
+.timeline-item h4 {
+    color: #4a00e0;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.timeline-item p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.timeline-item ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.timeline-item .tech-stack i {
+    font-size: 24px;
+    color: #fff;
+    background: linear-gradient(to right, #4a00e0, #8e2de2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Skills Progress Section */
+.skills-progress h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.progress-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.progress-bar-wrapper {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.progress-bar-wrapper p {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.progress-bar {
+  background: linear-gradient(90deg, #4a00e0, #8e2de2);
+  border-radius: 0px;
+  height: 25px;
+  position: relative;
+}
+
+/* Skill Icons */
+.skill-icon {
+    font-size: 25px;
+    color: #fff;
+    background: linear-gradient(to right, #4a00e0, #8e2de2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Scroll Trigger Animation */
+@keyframes fill-bar {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Add this class when in view */
+.animate-bar {
+    animation: fill-bar 1s ease-in-out forwards;
+}
+
+/* CTA Section */
+.cta {
+    background: linear-gradient(to right, #4a00e0, #8e2de2);
+    color: #fff;
+}
+
+.cta p {
+    font-size: 1.5rem;
+}
+
+.cta .btn {
+    background-color: #ffffff;
+    color: #4a00e0;
+    border-radius: 30px;
+}
+
+.cta .btn:hover {
+    background-color: #4a00e0;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}

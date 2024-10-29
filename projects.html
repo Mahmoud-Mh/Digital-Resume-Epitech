@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Mahmoud MOUZOUN</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/projects.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Mahmoud MOUZOUN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section class="projects-section py-5">
+        <div class="container">
+            <h2 class="text-center">Portfolio Project</h2>
+            <p class="text-center">Here is my ongoing portfolio project. Click on "View Details" for more information.</p>
+
+            <div class="row justify-content-center">
+                <!-- Project: Portfolio Website -->
+                <div class="col-md-8 project-card-container">
+                    <div class="project-card">
+                        <div class="project-card-body">
+                            <h3>Portfolio Website <span class="badge bg-warning">On going</span></h3>
+                            <p>A personal portfolio website showcasing my skills, projects, and experience. Built using modern web technologies.</p>
+                            <div class="tech-stack">
+                                <i class="fab fa-html5 tech-icon"></i>
+                                <i class="fab fa-css3-alt tech-icon"></i>
+                                <i class="fab fa-js-square tech-icon"></i>
+                                <i class="fab fa-php tech-icon"></i>
+                                <i class="fas fa-database tech-icon"></i>
+                            </div>
+                            <div class="project-buttons">
+                                <a href="https://github.com/Mahmoud-Mh/Epitech-Digital-Resume" target="_blank" class="btn btn-primary">GitHub Repo</a>
+                                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#portfolioModal">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Portfolio Project -->
+        <div class="modal fade" id="portfolioModal" tabindex="-1" aria-labelledby="portfolioModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="portfolioModalLabel">Portfolio Website Project</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>This project is a personal portfolio website that highlights my skills, experience, and projects. Built using:</p>
+                        <ul>
+                            <li>HTML, CSS, and JavaScript for the front-end</li>
+                            <li>PHP for form handling</li>
+                            <li>Bootstrap and TailWind for responsive design</li>
+                            <li>PHP (Planned) Handling form submissions, potential server logic</li>
+                            <li>GitHub for version control and project hosting</li>
+                            <li>Font Awesome for Icons for tech stack, social medial links, etc.</li>
+                            <li>Google Fonts for Typography (e.g Poppings) for better readability</li>
+                        </ul>
+                        <p>It includes features like a contact form, interactive project display, and integration with GitHub for project showcasing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-dark text-white">
+        <p>&copy; 2024 Mahmoud MOUZOUN | All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

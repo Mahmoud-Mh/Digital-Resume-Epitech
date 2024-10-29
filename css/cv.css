@@ -1,0 +1,180 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 30px;
+}
+
+.navbar ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #5ccfcf;
+}
+
+/* CV Section Styling */
+.cv-section {
+    padding: 120px 20px 50px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.cv-wrapper {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Left Half (Gradient Background) */
+.left-half {
+    background: linear-gradient(to right, #4a00e0, #8e2de2);
+    color: white;
+    padding: 40px 30px;
+    width: 60%;
+}
+
+.profile-info {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.left-half h2, .left-half h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.left-half h4 {
+    color: #5ccfcf;
+    margin-bottom: 15px;
+}
+
+/* Right Half (White Background) */
+.right-half {
+    background-color: #fff;
+    color: #333;
+    padding: 40px 30px;
+    width: 40%;
+}
+
+.right-half h4 {
+    color: #4a00e0;
+    margin-bottom: 15px;
+}
+
+.right-half ul, .left-half ul {
+    padding-left: 20px;
+}
+
+.right-half p, .left-half p, ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+ul li strong {
+    color: black;
+}
+
+/* Skills Progress Bars */
+.progress-bar {
+    background: #f0f0f0;
+    border-radius: 15px;
+    height: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    width: 100%;
+}
+
+.progress-bar span {
+    display: block;
+    background: linear-gradient(to right, #4a00e0, #8e2de2);
+    height: 100%;
+    border-radius: 15px;
+    text-align: right;
+    padding-right: 5px;
+    color: #fff;
+    font-size: 0.8rem;
+    line-height: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    text-align: center;
+    color: #ccc;
+    margin-top: 50px;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cv-wrapper {
+        flex-direction: column;
+    }
+
+    .left-half, .right-half {
+        width: 100%;
+    }
+}
