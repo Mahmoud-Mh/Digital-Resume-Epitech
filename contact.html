@@ -38,7 +38,7 @@
             <p class="text-center">Looking forward to hearing from you!</p>
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <form id="contactForm">
+                    <form id="contactForm" action="https://formspree.io/f/xzzbeqpo" method="POST">
                         <div class="mb-3">
                             <label for="name" class="form-label">Your Name</label>
                             <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
@@ -59,11 +59,6 @@
                         <div class="mb-3">
                             <label for="message" class="form-label">Your Message</label>
                             <textarea class="form-control" id="message" rows="5" placeholder="Write your message" required></textarea>
-                        </div>
-                        <!-- Simple Math Captcha -->
-                        <div class="mb-3">
-                            <label for="captcha" class="form-label">What is 5 + 3?</label>
-                            <input type="text" class="form-control" id="captcha" placeholder="Your answer" required>
                         </div>
                         <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
                         <div id="thankYouMessage" style="display: none; margin-top: 20px;">
