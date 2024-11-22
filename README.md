@@ -132,7 +132,7 @@ This project is licensed under the [MIT License](LICENSE).
 If you have any questions, suggestions, or opportunities, feel free to get in touch!
 
 - **Name**: Mahmoud Mouzoun
-- **Email**: [your-email@example.com]
+- **Email**: [mahmoud.mouzoun@epitech.eu]
 - **GitHub**: [Mahmoud-Mh](https://github.com/Mahmoud-Mh)
 - **Portfolio**: [Live Portfolio Link](https://mahmoud-mouzoun-portfolio.vercel.app/)
 
